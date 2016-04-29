@@ -26,8 +26,14 @@ build/Release
 # Dependency directory
 node_modules
 
+# include app specific dependency directory
+!app/node_modules
+
 # Optional npm cache directory
 .npm
 
 # Optional REPL history
 .node_repl_history
+
+# exclude lokiJS database
+lokidb.json

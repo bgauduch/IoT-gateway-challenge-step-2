@@ -1,0 +1,34 @@
+{
+  "name": "IoT-gateway-challenge",
+  "version": "1.0.0",
+  "description": "Dev challenge : RPI3 IoT with rest services",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app/app.js",
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaptisteGauduchon/IoT-gateway-challenge.git"
+  },
+  "keywords": [
+    "node",
+    "docker",
+    "iot",
+    "micro-services"
+  ],
+  "author": "Baptiste Gauduchon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BaptisteGauduchon/IoT-gateway-challenge/issues"
+  },
+  "homepage": "https://github.com/BaptisteGauduchon/IoT-gateway-challenge#readme",
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "supertest": "latest"
+  }
+}
