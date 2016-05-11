@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "node app/app.js",
-    "test": "mocha test"
+    "test": "mocha test",
+    "debug": "pm2 start app/app.js --watch"
   },
   "repository": {
     "type": "git",
