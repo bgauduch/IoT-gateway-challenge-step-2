@@ -3,8 +3,8 @@ var influx = require('influx')
 var router = express.Router()
 
 // influxdb sensors db
-var dbSensors = influx({
-	host: '192.168.99.101',
+var dbSensors = new influx.InfluxDB({
+	host: 'influxdb',
 	port: '8086',
 	user: 'iot',
 	password: 'pswd',

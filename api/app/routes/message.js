@@ -6,8 +6,8 @@ var router = express.Router()
 /*client = influx({
   host: 'influxdb'
  })*/
-var dbSensors = influx({
-	host: '192.168.99.101',
+var dbSensors = new influx.InfluxDB({
+	host: 'influxdb',
 	port: '8086',
 	user: 'iot',
 	password: 'pswd',

@@ -1,5 +1,5 @@
 {
-  "name": "IoT-gateway-challenge",
+  "name": "iot-gateway-challenge",
   "version": "1.0.0",
   "description": "Dev challenge : RPI3 IoT with rest services",
   "main": "app.js",
@@ -26,7 +26,8 @@
   "homepage": "https://github.com/BaptisteGauduchon/IoT-gateway-challenge#readme",
   "dependencies": {
     "body-parser": "latest",
-    "express": "latest"
+    "express": "latest",
+    "influx": "^5.0.7"
   },
   "devDependencies": {
     "mocha": "latest",
