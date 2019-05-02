@@ -1,10 +1,7 @@
-FROM mhart/alpine-node
-
-# Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+FROM node:12-alpine
 
 # Install app dependencies
+WORKDIR /usr/src/app
 COPY package.json /usr/src/app
 RUN npm install
 
@@ -15,4 +12,4 @@ COPY . /usr/src/app
 EXPOSE 8080
 
 # runtime
-CMD [ "npm", "start" ]
+ENTRYPOINT [ "npm", "start" ]
