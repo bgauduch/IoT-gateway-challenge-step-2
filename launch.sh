@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 # clear compose instance
 docker-compose rm -f
 
@@ -8,4 +10,4 @@ docker-compose pull
 docker-compose build --no-cache --force-rm
 
 # launch containers
-#docker-compose up -d
+docker-compose up #-d
